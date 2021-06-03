@@ -3,7 +3,7 @@ package com.example.animo
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.animo.databinding.ActivitySingUpBinding
-import com.example.animo.utils.replace
+import com.example.animo.utils.replaceActivity
 
 class SingUpActivity : AppCompatActivity() {
 
@@ -19,11 +19,11 @@ class SingUpActivity : AppCompatActivity() {
         super.onStart()
 
         mBinding.btnReg.setOnClickListener {
-            replace(MainActivity())
+            replaceActivity(MainActivity())
         }
 
         mBinding.btnReg.setOnClickListener {
-            replace(SingInActivity())
+            replaceActivity(SingInActivity())
         }
     }
 }
